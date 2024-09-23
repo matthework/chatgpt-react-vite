@@ -7,6 +7,8 @@ const ChatGPT = () => {
   const [loading, setLoading] = useState(false);
 
   const apiUrl = import.meta.env.VITE_API_URL;
+  console.log("apiURL: " + apiUrl);
+
   const api = axios.create({
     baseURL: apiUrl,
   });
